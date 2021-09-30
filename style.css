@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  font-size: 15px;
+  /* margin: 0; */
   font-family: Georgia;
 }
 
@@ -32,12 +31,12 @@ img {
 
 #links-group {
   font-size: 1.2rem;
-  margin: 0.75rem 1rem 0.75rem 0;
+  margin: 0.75em 1em 0.75em 0;
 }
 
 #links-group > a {
   text-decoration: none;
-  padding: 0 0.5rem 0;
+  padding: 0 0.5em 0;
   color: #1f2326;
 }
 
@@ -47,7 +46,6 @@ img {
 
 #welcome-section {
   height: 100vh;
-  /* background-color: #fefbe9; */
   background-image: url(/image/background.jpg);
   background-size: cover;
 }
@@ -60,6 +58,10 @@ img {
   color: #f0a04b;
 }
 
+#intro > h1 {
+  font-size: clamp(1.5rem, 3vw, 4rem);
+}
+
 #about-me {
   background-color: #f8f9f9;
 }
@@ -68,18 +70,18 @@ img {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 0px 20px #d6dbdf;
-  margin: 3rem 2rem 0;
-  padding: 0.8rem;
+  margin: 3em 1em 0;
+  padding: 0.8em;
 }
 
 #about-me-box > h3 {
-  margin: 2rem auto 1rem;
+  margin: 2em auto 1.5em;
   text-align: center;
 }
 
 #about-me p {
-  font-size: 1.15rem;
   text-align: justify;
+  font-size: clamp(1rem, 1.25vw, 2rem);
 }
 
 #who-am-i {
@@ -109,6 +111,7 @@ img {
   margin: 2rem 1rem 2rem;
   border-radius: 5px;
   box-shadow: 0px 0px 20px #d6dbdf;
+  font-style: italic;
 }
 
 #project-title > h5 {
