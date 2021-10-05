@@ -30,6 +30,7 @@ img {
 }
 
 #links-group {
+  display: flex;
   font-size: 1.2rem;
   margin: 0.75em 1em 0.75em 0;
 }
@@ -200,6 +201,18 @@ img {
 
 #contact-list > a:hover {
   transform: translateY(-0.3rem);
+}
+
+@media only screen and (max-width: 450px) {
+  #navbar {
+    opacity: 0.9;
+  }
+
+  #links-group {
+    flex-direction: column;
+    text-align: center;
+    margin: 0.5em 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
