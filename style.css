@@ -1,232 +1,236 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  /* margin: 0; */
-  font-family: Georgia;
+	/* margin: 0; */
+	font-family: Georgia;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
 }
 
 #img {
-  width: 90%;
-  height: 50%;
-  overflow: hidden;
+	width: 90%;
+	height: 50%;
+	overflow: hidden;
 }
 
 #img:hover img {
-  transform: scale(1.25);
+	transform: scale(1.25);
 }
 
 #navbar {
-  display: none;
-  justify-content: flex-end;
-  background-color: #e1eedd;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+	display: none;
+	justify-content: flex-end;
+	background-color: #e1eedd;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 #links-group {
-  display: flex;
-  font-size: 1.2rem;
-  margin: 0.75em 1em 0.75em 0;
+	display: flex;
+	font-size: 1.2rem;
+	margin: 0.75em 1em 0.75em 0;
 }
 
 #links-group > a {
-  text-decoration: none;
-  padding: 0 0.5em 0;
-  color: #1f2326;
+	text-decoration: none;
+	padding: 0 0.5em 0;
+	color: #1f2326;
 }
 
 #links-group > a:hover {
-  color: darkred;
+	color: darkred;
 }
 
 #welcome-section {
-  height: 100vh;
-  background-image: url(/image/background.jpg);
-  background-size: cover;
+	height: 100vh;
+	background-image: url(/image/background.jpg);
+	background-size: cover;
 }
 
 #intro {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f0a04b;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f0a04b;
 }
 
 #intro > h1 {
-  font-size: clamp(1.5rem, 3vw, 4rem);
+	font-size: clamp(1.5rem, 3vw, 4rem);
 }
 
 #about-me {
-  background-color: #f8f9f9;
+	background-color: #f8f9f9;
 }
 
 #about-me-box {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0px 0px 20px #d6dbdf;
-  margin: 3em 1em 0;
-  padding: 0.8em;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px #d6dbdf;
+	margin: 3em 1em 0;
+	padding: 0.8em;
 }
 
 #about-me-box > h3 {
-  margin: 2em auto 1.5em;
-  text-align: center;
+	margin: 2em auto 1.5em;
+	text-align: center;
 }
 
 #about-me p {
-  text-align: justify;
-  font-size: clamp(1rem, 1.25vw, 2rem);
+	text-align: justify;
+	font-size: clamp(1rem, 1.25vw, 2rem);
 }
 
 #who-am-i {
-  margin: 2rem 3rem 2rem;
+	margin: 2rem 3rem 2rem;
 }
 
 #what-did-i-learned {
-  margin: 2rem 3rem 3rem;
+	margin: 2rem 3rem 3rem;
 }
 
 .center {
-  text-align: center;
-  margin: 1rem 0 1rem;
+	text-align: center;
+	margin: 1rem 0 1rem;
 }
 
 #projects {
-  background-color: #f8f9f9;
-  padding: 3rem 3rem 5rem;
+	background-color: #f8f9f9;
+	padding: 3rem 3rem 5rem;
 }
 
 #project-title {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2rem 1rem 2rem;
-  border-radius: 5px;
-  box-shadow: 0px 0px 20px #d6dbdf;
-  font-style: italic;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 2rem 1rem 2rem;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px #d6dbdf;
+	font-style: italic;
 }
 
 #project-title > h5 {
-  margin: 1rem auto 1rem;
+	margin: 1rem auto 1rem;
 }
 
 #project-title button {
-  margin: 1rem 0 1rem;
+	margin: 1rem 0 1rem;
 }
 
 #project-title > a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 #project-title > a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 #description {
-  margin-top: 1rem;
-  text-align: center;
+	margin-top: 1rem;
+	text-align: center;
 }
 
 #contact {
-  display: flex;
-  justify-content: space-around;
-  background-color: #e1eedd;
+	display: flex;
+	justify-content: space-around;
+	background-color: #e1eedd;
 }
 
 #form-container {
-  background-color: #f0a04a;
-  color: white;
-  margin: -3rem 0 3rem;
-  border-radius: 7px;
+	background-color: #f0a04a;
+	color: white;
+	margin: -3rem 0 3rem;
+	border-radius: 7px;
 }
 
 #form-container > header {
-  font-size: 1.5rem;
-  margin: 1rem 1rem 0.5rem;
+	font-size: 1.5rem;
+	margin: 1rem 1rem 0.5rem;
 }
 
 #form-items {
-  margin: 0.5rem 1rem 0.5rem;
+	margin: 0.5rem 1rem 0.5rem;
 }
 
 #email-label,
 #textarea-label {
-  margin: 0.5rem 0 0.5rem;
+	margin: 0.5rem 0 0.5rem;
 }
 
 #email,
 #textarea {
-  width: 100%;
-  border-radius: 3px;
-  border: 1px solid #f8f9f9;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #f8f9f9;
 }
 
 #button {
-  margin: 0.5rem 1rem 1.5rem;
+	margin: 0.5rem 1rem 1.5rem;
 }
 
 #button:hover {
-  opacity: 0.85;
+	opacity: 0.85;
 }
 
 #footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #footer > h6 {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 #contact-list {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 #contact-list > a {
-  margin-right: 1.25rem;
-  color: #183a1d;
+	margin-right: 1.25rem;
+	color: #183a1d;
 }
 
 #contact-list > a:hover {
-  transform: translateY(-0.3rem);
+	transform: translateY(-0.3rem);
 }
 
 @media only screen and (max-width: 450px) {
-  #navbar {
-    opacity: 0.9;
-  }
+	#navbar {
+		opacity: 0.9;
+	}
 
-  #links-group {
-    flex-direction: column;
-    text-align: center;
-    margin: 0.5em 0;
-  }
+	#links-group {
+		flex-direction: column;
+		text-align: center;
+		margin: 0.5em 0;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-  #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	#contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-  #form-container {
-    width: 50vw;
-  }
+	#form-container {
+		width: 50vw;
+	}
 
-  #navbar {
-    justify-content: center;
-  }
+	#navbar {
+		justify-content: center;
+	}
 }
