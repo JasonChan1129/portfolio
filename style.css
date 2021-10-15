@@ -7,10 +7,22 @@ body {
 	font-family: Georgia;
 }
 
+@keyframes load {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 img {
 	width: 100%;
 	height: 100%;
 	transition: transform 1s;
+	opacity: 0;
+	animation: load 3s forwards;
+	animation-play-state: paused;
 }
 
 #img {
