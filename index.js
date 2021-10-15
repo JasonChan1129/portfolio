@@ -24,7 +24,7 @@ const observer2 = new IntersectionObserver(function (entries, observer2) {
 	entries.forEach(entry => {
 		if (entry && entry.isIntersecting) {
 			img.forEach(img => {
-				img.src = img.getAttribute('data-src');
+				// img.src = img.getAttribute('data-src');
 				img.style.animationPlayState = 'running';
 			});
 		}
