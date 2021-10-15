@@ -1,3 +1,4 @@
+// make navbar visible only scroll pass some threshold
 const welcome = document.querySelector('#welcome-section');
 let navBar = document.getElementById('navbar');
 
@@ -15,20 +16,24 @@ const observer = new IntersectionObserver(function (entries, observer) {
 
 observer.observe(welcome);
 
-const project = document.querySelector('#projects');
-const img = document.querySelectorAll('img');
+// make projects img visible only scroll pass some threshold
+const project = document.querySelectorAll('#project-item');
 
-const options2 = { threshold: 0.5 };
+const options2 = { threshold: 0.35 };
 
 const observer2 = new IntersectionObserver(function (entries, observer2) {
 	entries.forEach(entry => {
 		if (entry && entry.isIntersecting) {
-			img.forEach(img => {
-				// img.src = img.getAttribute('data-src');
-				img.style.animationPlayState = 'running';
-			});
+			const nodeLength = entry.target.childNodes.length;
+			const nodeList = entry.target.childNodes;
+			for (let i = 0; i < nodeLength; i++) {
+				if (nodeList[i].id === 'img') {
+					nodeList[i].style.animationPlayState = 'running';
+					return;
+				}
+			}
 		}
 	});
 }, options2);
 
-observer2.observe(project);
+project.forEach(project => observer2.observe(project));
