@@ -1,4 +1,4 @@
-html {
+#main {
 	scroll-behavior: smooth;
 }
 
@@ -55,7 +55,7 @@ img {
 	background-size: cover;
 }
 
-#intro {
+#greeting {
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -63,7 +63,7 @@ img {
 	color: #f0a04b;
 }
 
-#intro > h1 {
+#greeting > h1 {
 	font-size: clamp(1.5rem, 3vw, 4rem);
 }
 
@@ -71,7 +71,7 @@ img {
 	background-color: #f8f9f9;
 }
 
-#about-me-box {
+.container-aboutMe {
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0px 0px 20px #d6dbdf;
@@ -79,27 +79,28 @@ img {
 	padding: 0.8em;
 }
 
-#about-me-box > h3 {
+.header {
 	margin: 2em auto 1.5em;
 	text-align: center;
+	font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
 
-#about-me p {
+.sub-header {
+	font-size: clamp(1.3rem, 1.4vw, 1.9rem);
+	margin-bottom: 0.7em;
+}
+
+.paragraph {
 	text-align: justify;
-	font-size: clamp(1rem, 1.25vw, 2rem);
+	font-size: clamp(1rem, 1.25vw, 1.75rem);
 }
 
-#who-am-i {
+.paragraph1 {
 	margin: 2rem 3rem 2rem;
 }
 
-#what-did-i-learned {
+.paragraph2 {
 	margin: 2rem 3rem 3rem;
-}
-
-.center {
-	text-align: center;
-	margin: 1rem 0 1rem;
 }
 
 #projects {
@@ -107,7 +108,7 @@ img {
 	padding: 3rem 3rem 5rem;
 }
 
-#project-title {
+#project-item {
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -116,28 +117,31 @@ img {
 	margin: 2rem 1rem 2rem;
 	border-radius: 5px;
 	box-shadow: 0px 0px 20px #d6dbdf;
-	font-style: italic;
 }
 
-#project-title > h5 {
+#project-item > header {
 	margin: 1rem auto 1rem;
+	font-size: clamp(1.2rem, 1.25vw, 1.75rem);
 }
 
-#project-title button {
+#project-item button {
 	margin: 1rem 0 1rem;
+	font-size: clamp(1rem, 1.1vw, 1.25rem);
 }
 
-#project-title > a {
+#project-item > a {
 	text-decoration: none;
+	font-size: clamp(1rem, 1.1vw, 1.25rem);
 }
 
-#project-title > a:hover {
+#project-item > a:hover {
 	text-decoration: underline;
 }
 
 #description {
 	margin-top: 1rem;
 	text-align: center;
+	font-size: clamp(1rem, 1.1vw, 1.25rem);
 }
 
 #contact {
@@ -154,12 +158,13 @@ img {
 }
 
 #form-container > header {
-	font-size: 1.5rem;
+	font-size: clamp(1.2rem, 1.2vw, 1.6rem);
 	margin: 1rem 1rem 0.5rem;
 }
 
 #form-items {
 	margin: 0.5rem 1rem 0.5rem;
+	font-size: clamp(1rem, 1vw, 1.3rem);
 }
 
 #email-label,
